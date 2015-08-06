@@ -1,0 +1,33 @@
+/*Custom CSS*/
+/*Mixins*/
+/*Variables*/
+/*Body Styles*/
+body {
+  font-family: "Philosopher", "Quintessential", sans-serif;
+  background: radial-gradient(circle, #2e2e2e, #262626, #212121);
+  color: #FFFFFF; }
+  body a {
+    transition: all 450ms ease-in-out;
+    color: #585558;
+    text-decoration: none; }
+    body a:hover {
+      transition: all 450ms ease-in-out;
+      color: #EF5350; }
+  body ul {
+    list-style-type: none; }
+
+/*Header Styles*/
+h1 {
+  color: #EF5350; }
+
+h2 {
+  color: #212121; }
+
+h3 {
+  color: #EF5350; }
+
+/*Custom Styles*/
+.bold {
+  color: #EF5350; }
+
+/*# sourceMappingURL=custom.css.map */

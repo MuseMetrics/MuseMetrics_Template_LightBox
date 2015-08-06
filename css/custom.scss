@@ -1,0 +1,51 @@
+/*Custom CSS*/
+
+/*Mixins*/
+@mixin fade {
+  transition: all 450ms ease-in-out;
+}
+
+/*Variables*/
+$green: #15C243;
+$red: #EF5350;
+$gray: #585558;
+$darkgray: #212121;
+$blue: #1B8E8E;
+$white: #FFFFFF;
+$bar: #F2F2F2;
+
+/*Body Styles*/
+body {
+	font-family: "Philosopher", "Quintessential", sans-serif;
+	background: radial-gradient(circle, lighten($darkgray, 5%), lighten($darkgray, 2%), $darkgray);
+	a {
+		@include fade;
+		color: $gray;
+		text-decoration: none;
+
+		&:hover {
+			@include fade;
+			color: $red;
+		}
+	}
+	ul {
+		list-style-type: none;
+	}
+	color: $white;
+}
+
+/*Header Styles*/
+h1 {
+  color: $red;
+}
+h2 {
+  color: $darkgray;
+}
+h3 {
+  color: $red;
+}
+
+/*Custom Styles*/
+.bold {
+  color: $red;
+}
