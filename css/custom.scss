@@ -7,7 +7,7 @@
 
 /*Variables*/
 $green: #15C243;
-$red: #EF5350;
+$red: #BA1111;
 $gray: #585558;
 $darkgray: #212121;
 $blue: #1B8E8E;
@@ -16,8 +16,14 @@ $bar: #F2F2F2;
 
 /*Body Styles*/
 body {
-	font-family: "Philosopher", "Quintessential", sans-serif;
-	background: radial-gradient(circle, lighten($darkgray, 5%), lighten($darkgray, 2%), $darkgray);
+	font-family: "Antic Didone", "Philosopher", "Quintessential", sans-serif;
+	//background: radial-gradient(circle, lighten($darkgray, 5%), lighten($darkgray, 2%), $darkgray);
+	background: lighten($darkgray, 8%) url("../img/photographer.jpg");
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-position: center;
 	a {
 		@include fade;
 		color: $gray;
@@ -37,12 +43,16 @@ body {
 /*Header Styles*/
 h1 {
   color: $red;
+  font-size: 2.35em;
 }
 h2 {
   color: $darkgray;
 }
 h3 {
   color: $red;
+}
+p {
+  font-family: "Philosopher", "Quintessential", sans-serif;
 }
 
 /*Custom Styles*/
